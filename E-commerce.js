@@ -39,47 +39,15 @@ window.addEventListener("scroll", () => {
    
    
 });
-window.addEventListener("scroll",() => {
 
-    const scrollY = window.scrollY;
-    banner.style.transform = `translateY(-${scrollY * 0.041}px)`;
-    
-
-});
+const a = document.getElementById('lastImage');
+const b = document.getElementById('MainImg');
 
 
-    function changeProductImage(selectedProduct, imageUrl) {
-        var imageContainer = document.getElementsByClassName('.single-pro-details');
-        
-        // Update the src attribute for the image container
-        imageContainer.src = imageUrl;
-        
-        // You can also update other parts of your product details page based on the selected product
-        var productNameElement = document.getElementById('MySpan');
-        var productDescriptionElement = document.getElementById('abt');
-        var productPriceElement = document.getElementById('price');
-        
-        // Replace these values with your actual product data
-        var productsData = {
-            product1: {
-                name: "Levi's",
-                description: "The Gildan ultra cotton T-shirt is made from a substantil 6.0 oz. per sq. yd. fabric constructed from 100% cotton , this classic fit preshrunk jersey knit provides unmached comfort with each wear . featuring a taped neck and shoulder, and a seamless double-needle collar ,and available inm a range of color , it offers it all in the ultimate head-turning package ",
-                price: "$78.09",
-                imageUrl: "Build-and-Deploy-Ecommerce-Website-/img/products/f3.jpg"
-            },
-            product2: {
-                name: "Adidas 2",
-            description: "The Gildan ultra cotton T-shirt is made from a subil 6.0 oz. per sq. yd. fabric constructed from 100% cotton , this classic fit preshrunk jersey knit provides unmached comfort with each wear . featuring a taped neck and shoulder, and a seamless double-needle collar ,and available inm a range of color , it offers it all in the ultimate head-turning package ",
-                price: "$102",
-                imageUrl: "Build-and-Deploy-Ecommerce-Website-/img/products/f3.jpg"
-            }
-            // Add more products as needed
-        };
-        
-        var product = productsData[selectedProduct];
-        
-        productNameElement.textContent = product.name;
-        productDescriptionElement.textContent = product.description;
-        productPriceElement.textContent = product.price;
-    }
+
+
+function changeImage(imageUrl)
+{
+    b.src=imageUrl;
+}
 

@@ -721,8 +721,50 @@ footer a:hover{
 
 
 
+/*Aout Page*/
+#page-header.about-header{
+    background-image: url('Build-and-Deploy-Ecommerce-Website-/img/about/banner.png');
+}
+#about-head{
+    display: flex;
+    align-items: center;
+}
+#about-head img{
+    width:50%;
+    height:auto;
+}
+#about-head div{
+    padding-left:40px;
+}
+#about-location{
+    text-align: center;
+}
+#about-location h1{
+    padding-bottom: 7vh;
+}
+
+#about-location .loc img{
+    height:70vh;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*Contact Page*/
+
+#page-header.contact-header{
+    background-image: url('Build-and-Deploy-Ecommerce-Website-/img/about/banner.png');
+}
+
 
 #contact-details{
     display:flex;
@@ -821,7 +863,17 @@ footer a:hover{
     font-weight:600;
     color:black;
 }
+
+
+
+
 /*Cart Page*/
+#page-header.cart-header{
+    background-image: url('Build-and-Deploy-Ecommerce-Website-/img/about/banner.png');
+}
+#cart{
+    overflow-x: auto;
+}
 #cart table{
     width:100%;
     border-collapse:collapse;
@@ -876,6 +928,48 @@ footer a:hover{
     font-size: 13px;
 }
 
+#cart-add {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#cart-add #coupon{
+    width:50%;
+    margin-bottom: 30px;
+}
+#cart-add #coupon h3,#subtotal h3{
+    padding-bottom:15px;
+
+}
+#coupon input{
+    padding:10px 20px ;
+    outline:none;
+    width: 60%;
+    margin-right:10px;
+    border: 1px solid #e2e9e1;
+}
+#coupon button,
+#subtotal button{
+    background-color: #088178;
+    color:white;
+}
+#subtotal{
+    width:50%;
+    margin-bottom: 30px;
+    border:1px solid #e2e9e1;
+    padding:30px;
+}
+#subtotal table{
+    border-collapse:collapse;
+    width:100%;
+    margin-bottom: 20px;
+}
+#subtotal table td{
+    font-size: 13px;
+    border:1px solid #e2e9e1;
+    padding:10px;
+    font-size: 13px;
+}
 
 
 
@@ -913,9 +1007,7 @@ footer a:hover{
     #navbar li{
         margin-bottom:8vh;
     }
-    #navbar li:hover{
-        background-color: #088178;
-    }
+   
     #mobile{
         display:flex;
         align-items: center;
@@ -992,6 +1084,43 @@ footer a:hover{
         width: 50%;
         
     }
+
+    /*cart Page*/
+
+    #cart-add {
+        flex-direction:column;
+        width:100%;
+        
+    }
+    #cart-add #coupon{
+        width:100%;
+        padding-left: 20px;
+    }
+    #cart-add #subtotal {
+        width: 100%;
+        
+    }
+
+
+
+
+
+    /*About page*/
+    #about-head {
+        
+        flex-direction:column;
+    }
+    #about-head img {
+        width: 100%;
+    }
+    #about-head div {
+        padding: 0px 20px;
+    }
+    #about-location .loc img {
+      width:100%;
+    }
+
+
 }
 @media(max-width:750px)
 {
@@ -1121,6 +1250,23 @@ footer a:hover{
     #form-details .people {
       margin:2.5vh;
     }
+    /*cart Page*/
+
+    #cart-add {
+        flex-direction:column;
+        width:100%;
+        
+    }
+    #cart-add #coupon{
+        width:100%;
+        padding-left: 40px;
+    }
+    #cart-add #subtotal {
+        width: 100%;
+    }
+    #about-location .loc img {
+        width:100%;
+      }
     
 
 
